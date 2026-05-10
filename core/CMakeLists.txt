@@ -1,0 +1,38 @@
+ADD_LIB(
+    core INTERFACE
+    INTERFACE_LIBS OpenMP::OpenMP_CXX pcg_cpp Eigen3::Eigen nlohmann_json::nlohmann_json spdlog::spdlog
+)
+
+# ---- optimization flags ----
+# Native architecture (propagates to all targets linking core)
+if(WOS_USE_NATIVE_ARCH)
+    if(MSVC)
+        message(STATUS "Enabling AVX2 optimizations for MSVC")
+        target_compile_options(core INTERFACE "/arch:AVX2")
+    else()
+        include(CheckCXXCompilerFlag)
+        check_cxx_compiler_flag("-march=native" COMPILER_SUPPORTS_MARCH_NATIVE)
+        if(COMPILER_SUPPORTS_MARCH_NATIVE)
+            message(STATUS "-march=native is supported and enabled")
+            target_compile_options(core INTERFACE "-march=native")
+        else()
+            message(STATUS "-march=native not supported")
+        endif()
+    endif()
+else()
+    message(STATUS "Native architecture optimizations disabled (for better portability)")
+    if(NOT MSVC)
+        target_compile_options(core INTERFACE "-msse2")
+    endif()
+endif()
+
+# Fast math (propagates to all targets linking core)
+if(WOS_USE_FAST_MATH)
+    if(MSVC)
+        message(STATUS "Enabling fast math optimizations for MSVC")
+        target_compile_options(core INTERFACE "/fp:fast")
+    else()
+        message(STATUS "Enabling fast math optimizations for GCC/Clang")
+        target_compile_options(core INTERFACE "-ffast-math")
+    endif()
+endif()

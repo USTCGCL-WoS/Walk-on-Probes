@@ -1,0 +1,36 @@
+[submodule "external/CLI11"]
+	path = external/CLI11
+	url = https://github.com/CLIUtils/CLI11.git
+[submodule "external/Eigen"]
+	path = external/Eigen
+	url = https://gitlab.com/libeigen/eigen.git
+[submodule "external/cli11"]
+	path = external/cli11
+	url = https://github.com/CLIUtils/CLI11.git
+[submodule "external/eigen"]
+	path = external/eigen
+	url = https://gitlab.com/libeigen/eigen.git
+[submodule "external/fcpw"]
+	path = external/fcpw
+	url = https://github.com/rohan-sawhney/fcpw.git
+[submodule "external/nlohmann_json"]
+	path = external/nlohmann_json
+	url = https://github.com/nlohmann/json.git
+[submodule "external/spdlog"]
+	path = external/spdlog
+	url = https://github.com/gabime/spdlog.git
+[submodule "external/tinyxml2"]
+	path = external/tinyxml2
+	url = https://github.com/leethomason/tinyxml2.git
+[submodule "external/stb_image/stb"]
+	path = external/stb_image/stb
+	url = https://github.com/nothings/stb.git
+[submodule "external/pcg_cpp"]
+	path = external/pcg_cpp
+	url = https://github.com/T7imal/pcg-cpp.git
+[submodule "external/gtest"]
+	path = external/gtest
+	url = https://github.com/google/googletest.git
+[submodule "external/nanoflann"]
+	path = external/nanoflann
+	url = https://github.com/jlblancoc/nanoflann.git

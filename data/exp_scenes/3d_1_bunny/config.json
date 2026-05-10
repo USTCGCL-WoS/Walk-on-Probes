@@ -1,0 +1,30 @@
+{
+    "dimension": 3,
+    "interior_only": true,
+    "is_screened": true,
+    "screened_kappa": 5.0,
+    "solver_plane": {
+        "origin": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "normal": [
+            0.0,
+            -1.0,
+            0.0
+        ],
+        "u_axis": [
+            1.0,
+            0.0,
+            0.0
+        ],
+        "v_axis": [
+            0.0,
+            0.0,
+            1.0
+        ],
+        "width": 2.0,
+        "height": 2.0
+    }
+}

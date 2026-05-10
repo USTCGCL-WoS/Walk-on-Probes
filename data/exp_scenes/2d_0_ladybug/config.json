@@ -1,0 +1,26 @@
+{
+    "dimension": 2,
+    "interior_only": false,
+    "is_screened": false,
+    "render_range": {
+        "min": [
+            -1.0,
+            -1.0
+        ],
+        "max": [
+            1.0,
+            1.0
+        ]
+    },
+    "source_range": {
+        "min": [
+            -1.0,
+            -1.0
+        ],
+        "max": [
+            1.0,
+            1.0
+        ]
+    },
+    "source_intensity": 100.0
+}

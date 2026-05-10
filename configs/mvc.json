@@ -1,0 +1,23 @@
+{
+    "scene": "data/exp_scenes/3d_0_gear",
+    "seed": 42,
+    "wpp": 1,
+    "width": 1024,
+    "height": 1024,
+    "output": "output/output_mvc.png",
+    "analytical": false,
+    "solver": {
+        "type": "mvc",
+        "num_iterations": 4,
+        "num_cache_points": 40000,
+        "wost_wpp": 1,
+        "max_steps": 1024,
+        "epsilon": 0.0001,
+        "r_min": 0.0001,
+        "source_ratio": 1.0,
+        "min_source_samples": 1,
+        "mu": 0.02,
+        "lambda": 0.02,
+        "adapt_q": 1.0
+    }
+}

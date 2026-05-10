@@ -1,0 +1,26 @@
+{
+    "scene": "data/exp_scenes/3d_0_gear",
+    "seed": 42,
+    "wpp": 1,
+    "width": 1024,
+    "height": 1024,
+    "output": "output/output_hc.png",
+    "analytical": false,
+    "solver": {
+        "type": "hc",
+        "num_iterations": 4,
+        "fourier_modes": 10,
+        "lambda": 100.0,
+        "mu": 1000.0,
+        "min_boundary_samples": 32,
+        "min_source_samples": 1,
+        "alpha_rec": 0.9,
+        "w_min": 1.0,
+        "wost_wpp": 1,
+        "max_steps": 1024,
+        "epsilon": 0.0001,
+        "r_min": 0.0001,
+        "use_sn": true,
+        "use_cv": true
+    }
+}

@@ -1,0 +1,2 @@
+GT Image Auto range: [0.2, 0.9998929]
+Source Preview Auto range: [0.0, 49.01960754394531]

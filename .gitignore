@@ -1,0 +1,8 @@
+.vscode/
+.vs/
+.cache/
+build/
+.claude/
+/output
+/tasks
+__pycache__/
