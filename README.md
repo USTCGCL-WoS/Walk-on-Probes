@@ -1,6 +1,6 @@
 # WoP: Walk on Probes
 
-This repository contains the official implementation of our 2026 paper
+This repository contains the official implementation of our **SIGGRAPH 2026** paper
 "[Probe-based Walk on Spheres for Efficient Path Reusing](https://t7imal.github.io/projects/2026wop/)".
 
 ## Build
